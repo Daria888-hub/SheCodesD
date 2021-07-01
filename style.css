@@ -1,0 +1,131 @@
+.demo {
+    max-width: 700px;
+    margin: 50px auto;
+  
+    background: #ffffff99;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(59, 59, 59);
+  }
+  
+  body {
+    
+    background: radial-gradient(
+      circle at 10% 20%,
+      rgb(3, 235, 255) 0%,
+      rgb(152, 70, 242) 100.2%
+    );
+  }
+  .prediction {
+    margin-top: 50px;
+    font-family: "Courier Prime", monospace;
+  }
+  .current {
+    font-family: "Times New Roman", Times, serif;
+  
+  }
+  
+  .sunny {
+    color: yellow;
+    font-size: 200px;
+  }
+  
+ 
+  
+  .footer {
+    text-align: center;
+    color: black;
+    font-family: "Rochester", cursive;
+  margin-top: 100px;
+    font-size: 25px;
+  }
+ 
+  .tempretureNow {
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: "Rochester", cursive;
+  }
+
+
+  li {
+
+    color:  rgb(59, 59, 59);
+    font-size: 30px;
+    font-family: monospace;
+    line-height: 40px;
+    list-style: none;
+   
+  }
+
+  a {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+  }
+  a:hover {
+    color: whitesmoke;
+  }
+  h1 {
+    font-size: 60px;
+    font-family: "Rochester", cursive;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+
+  form{
+    text-align: center;
+  
+  padding: 40px 50px 30px;
+  max-width: 650px;
+  
+  }
+  input{
+
+    margin: 10px auto;
+  
+    border: 1px solid white;
+    background: white;
+    color: blue;
+    font-size: 16px;
+    line-height: 10px;
+    padding: 16px 24px;
+    border-radius: 40px;
+    box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+    cursor: pointer;  
+  }
+
+  button {
+    display: block;
+    margin: 5px auto;
+    border: 1px solid white;
+    background: white;
+    color: blue;
+    font-size: 16px;
+    line-height: 10px;
+    padding: 16px 24px;
+    border-radius: 40px;
+    transition: all 200ms ease;
+    box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgba(16, 195, 240, 0.884);
+    color: white;
+    transform: translateY(-2px);
+  }
+  button:active {
+    transform: translateY(-1px);
+  }
+    
+  .col-6{
+    margin-top: 150px;
+  
+  }
+
+  i{
+    font-size: 30px;
+    color: whitesmoke;
+  }
