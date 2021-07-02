@@ -87,6 +87,8 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+
 //display tempreture
 //function tempCelsius(event) {
 //event.preventDefault();
