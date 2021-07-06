@@ -10,12 +10,7 @@
   }
   
   body {
-    
-    background: radial-gradient(
-      circle at 10% 20%,
-      rgb(3, 235, 255) 0%,
-      rgb(152, 70, 242) 100.2%
-    );
+    background: linear-gradient(146deg, rgb(185, 162, 243) 0%, rgb(78, 222, 229) 100%);
   }
   .prediction {
     margin-top: 50px;
