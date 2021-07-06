@@ -64,12 +64,13 @@ function showTempreture(response) {
   let currentWind = document.querySelector(".wind");
   currentWind.innerHTML = `wind ${wind}km/hr`;
 
-  document.querySelector(".currentCondition").innerHTML =
-    response.data.weather[0].main;
+  document.querySelector(".currentCondition").innerHTML = response.data.weather[0].main;
 
-    let iconElement = document.querySelector("#icon");
-    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    iconElement.setAttribute("alt", response.data.weather[0].description);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+celsiusTemp =  Math.round(response.data.main.temp);  
 
 }
 let search = document.querySelector("#search-city-form");
@@ -96,11 +97,12 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function displayFahrenheit(event){
   event.preventDefault();
-  let fahrenheitTemp = Math.round((14*9)/5+32);
+  let fahrenheitTemp = Math.round((celsiusTemp*9)/5+32);
   currentTemp.innerHTML= fahrenheitTemp;
 
 }
 
+let celsiusTemp = null;
 
 let fahrenheitLink= document.querySelector( "#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
