@@ -94,18 +94,13 @@ let currentLocationButton = document.querySelector("button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 
-//display tempreture
-//function tempCelsius(event) {
-//event.preventDefault();
-//let currentCelsius = document.querySelector(".tempChange");}
-//function tempratureFahrenheit(event) {
-//event.preventDefault();
-//let currentFah = document.querySelector(".tempChange");
-//let tempreture = #currentTemp
-//currentFah.innerHTML = Math.round((tempreture * 9) / 5 + 32);}
+function displayFahrenheit(event){
+  event.preventDefault();
+  let fahrenheitTemp = Math.round((14*9)/5+32);
+  currentTemp.innerHTML= fahrenheitTemp;
 
-//let tempFah = document.querySelector("#fahrenheit-link");
-//tempFah.addEventListener("click", tempratureFahrenheit);
-//let tempCels = document.querySelector("#celsius-link");
-//tempCels.addEventListener("click", tempCelsius);
-//let tempretureCelsLocation = document.querySelector("#currentTemp");
+}
+
+
+let fahrenheitLink= document.querySelector( "#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
