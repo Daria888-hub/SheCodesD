@@ -66,6 +66,11 @@ function showTempreture(response) {
 
   document.querySelector(".currentCondition").innerHTML =
     response.data.weather[0].main;
+
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
+
 }
 let search = document.querySelector("#search-city-form");
 search.addEventListener("submit", city);
