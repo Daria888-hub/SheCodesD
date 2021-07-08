@@ -9,9 +9,7 @@
     color: rgb(59, 59, 59);
   }
   
-  body {
-    background: linear-gradient(146deg, rgb(185, 162, 243) 0%, rgb(78, 222, 229) 100%);
-  }
+
   .prediction {
     margin-top: 50px;
     font-family: "Courier Prime", monospace;
@@ -23,7 +21,7 @@
   
   .footer {
     text-align: center;
-    color: black;
+    color: rgb(100, 94, 94);;
     font-family: "Rochester", cursive;
   margin-top: 100px;
     font-size: 25px;
@@ -38,7 +36,7 @@
 
   li {
 
-    color:  rgb(59, 59, 59);
+    color:  rgb(100, 94, 94);
     font-size: 30px;
     font-family: monospace;
     line-height: 40px;
@@ -47,7 +45,7 @@
   }
 
   a {
-    color: rgb(59, 59, 59);
+    color: rgb(100, 94, 94);;
     text-decoration: none;
   }
   a:hover {
@@ -100,7 +98,7 @@
   }
   
   button:hover {
-    background-color: rgba(16, 195, 240, 0.884);
+    background-color: rgba(240, 110, 181, 0.884);
     color: white;
     transform: translateY(-2px);
   }

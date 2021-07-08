@@ -47,7 +47,7 @@ function city(event) {
   searchCity(city);
 }
 
-searchCity("Sydney");
+
 
 function showTempreture(response) {
   document.querySelector("h1").innerHTML = response.data.name;
@@ -73,8 +73,7 @@ function showTempreture(response) {
    celsiusTemp =  Math.round(response.data.main.temp);  }
 
    
-let search = document.querySelector("#search-city-form");
-search.addEventListener("submit", city);
+
 
 //current location
  
@@ -91,8 +90,7 @@ function getCurrentLocation(event) {
   
 }
 
-let currentLocationButton = document.querySelector("button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+
 
 
 function displayFahrenheit(event){
@@ -112,6 +110,13 @@ function displayCelsius (event){
 
 let celsiusTemp = null;
 
+let search = document.querySelector("#search-city-form");
+search.addEventListener("submit", city);
+
+searchCity("Sydney");
+
+let currentLocationButton = document.querySelector("button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 let fahrenheitLink= document.querySelector( "#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
 let celsiustLink= document.querySelector( "#celsius-link");
