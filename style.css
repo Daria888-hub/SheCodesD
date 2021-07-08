@@ -68,7 +68,7 @@
   
   }
   input{
-
+outline: none;
     margin: 10px auto;
   
     border: 1px solid white;
@@ -115,7 +115,3 @@
     font-size: 30px;
     color: whitesmoke;
   };
-
-  img{
-    font-size: 50px;
-  }
