@@ -97,8 +97,15 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function displayFahrenheit(event){
   event.preventDefault();
+  
   let fahrenheitTemp = Math.round((celsiusTemp*9)/5+32);
   currentTemp.innerHTML= fahrenheitTemp;
+
+}
+
+function displayCelsius (event){
+  event.preventDefault();
+
 
 }
 
@@ -106,3 +113,5 @@ let celsiusTemp = null;
 
 let fahrenheitLink= document.querySelector( "#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
+let celsiustLink= document.querySelector( "#celsius-link");
+celsiusLink.addEventListener("click", displayCelsius);
