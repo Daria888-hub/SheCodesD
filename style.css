@@ -11,14 +11,13 @@
   
 
   .weather-forecast {
-   font-size: 30px;
+    text-align: center;
+   font-size: 25px;
     font-family: "Courier Prime", monospace;
   }
   
    };
-   .weather-forecast-temp{
-    font-size: px;
-}
+
   .current {
     font-family: monospace;
   
