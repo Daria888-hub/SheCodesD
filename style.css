@@ -11,9 +11,14 @@
   
 
   .weather-forecast {
-    margin-top: 50px;
+   font-size: 30px;
     font-family: "Courier Prime", monospace;
   }
+  
+   };
+   .weather-forecast-temp{
+    font-size: px;
+}
   .current {
     font-family: monospace;
   
@@ -23,7 +28,7 @@
     text-align: center;
     color: rgb(100, 94, 94);;
     font-family: "Rochester", cursive;
-  margin-top: 100px;
+  margin-top: 50px;
     font-size: 25px;
   }
  
