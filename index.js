@@ -47,6 +47,34 @@ function city(event) {
   searchCity(city);
 }
 
+function displayForecast (){
+  let forecastElement=document.querySelector ( "#forecast");
+
+let forecastHTML =`<div class="row">`;
+ let days= [ "Mon", "Tue", "Wend", "Thur", "Fri","Sut"];
+ days.forEach(function(day){
+   forecastHTML= 
+forecastHTML+ `
+  
+  <div class="col-2">
+    <div class="weather-forecast-date">${day}</div>
+    <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="60"
+                />
+     <div class="weather-forecast-temp">
+       <span class="weather-forecast-temp-max"><strong>24°</strong></span>/
+       <span class="weather-forecast-temp-min">18°</span>
+     </div>           
+  </div>`;
+ })
+
+
+    forecastHTML=forecastHTML+`</div>`;
+  forecastElement.innerHTML=forecastHTML
+};
+
 
 
 function showTempreture(response) {
@@ -114,6 +142,7 @@ let search = document.querySelector("#search-city-form");
 search.addEventListener("submit", city);
 
 searchCity("Sydney");
+displayForecast();
 
 let currentLocationButton = document.querySelector("button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
