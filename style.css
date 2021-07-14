@@ -1,7 +1,7 @@
 .demo {
     max-width: 700px;
-    margin: 50px auto;
-  
+    margin: 20px auto;
+    color: rgb(100, 94, 94);
     background: #ffffff99;
     padding: 10px 50px;
     border-radius: 25px;
@@ -12,7 +12,7 @@
 
   .weather-forecast {
     text-align: center;
-   font-size: 25px;
+   font-size: 20px;
     font-family: "Courier Prime", monospace;
   };
 
@@ -26,20 +26,18 @@
     color: rgb(100, 94, 94);;
     font-family: "Rochester", cursive;
   margin-top: 50px;
-    font-size: 25px;
+    font-size: 20px;
   }
  
   .tempretureNow {
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 40px;
     font-family: "Rochester", cursive;
   }
 
 
   li {
-
-    color:  rgb(100, 94, 94);
-    font-size: 30px;
+    font-size: 25px;
     font-family: monospace;
     line-height: 40px;
     list-style: none;
@@ -47,38 +45,37 @@
   }
 
   a {
-    color: rgb(100, 94, 94);;
+    font-size: 25px;
+    color: rgb(100, 94, 94);
     text-decoration: none;
   }
   a:hover {
     color: whitesmoke;
   }
   h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Rochester", cursive;
   }
   
   p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   form{
     text-align: center;
-  
   padding: 40px 50px 30px;
   max-width: 650px;
   
   }
   input{
 outline: none;
-    margin: 10px auto;
-  
+  margin: -25px auto;
     border: 1px solid white;
     background: white;
     color: blue;
     font-size: 16px;
     line-height: 10px;
-    padding: 16px 24px;
+    padding: 12px 20px;
     border-radius: 40px;
     box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
     cursor: pointer;  
@@ -92,7 +89,7 @@ outline: none;
     color: blue;
     font-size: 16px;
     line-height: 10px;
-    padding: 16px 24px;
+    padding: 12px 20px;
     border-radius: 40px;
     transition: all 200ms ease;
     box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
@@ -112,8 +109,3 @@ outline: none;
     margin-top: 50px;
   
   }
-
-  i{
-    font-size: 30px;
-    color: whitesmoke;
-  };
